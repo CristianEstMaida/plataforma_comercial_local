@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "primary-container": "#0f766e", "on-secondary-fixed-variant": "#783200", "tertiary-fixed-dim": "#d0bcff", "inverse-on-surface": "#f3f0f4", "on-primary-container": "#a3faef", "error-container": "#ffdad6", "on-error": "#ffffff", "on-tertiary-fixed": "#23005c", "on-surface": "#1b1b1e", "on-primary-fixed": "#00201d", "secondary": "#9d4300", "on-secondary-fixed": "#341100", "inverse-primary": "#80d5cb", "surface-bright": "#fbf8fc", "primary-fixed-dim": "#80d5cb", "surface-variant": "#e4e1e6", "inverse-surface": "#303033", "surface-tint": "#006a63", "surface-container": "#f0edf1", "surface-container-high": "#eae7eb", "background": "#fbf8fc", "surface-dim": "#dcd9dd", "on-primary": "#ffffff", "on-secondary-container": "#5c2400", "surface-container-highest": "#e4e1e6", "error": "#ba1a1a", "on-surface-variant": "#3e4947", "tertiary-fixed": "#e9ddff", "tertiary": "#6029c9", "primary": "#005c55", "tertiary-container": "#7948e3", "on-primary-fixed-variant": "#00504a", "secondary-fixed": "#ffdbca", "on-tertiary-fixed-variant": "#5516be", "on-error-container": "#93000a", "secondary-container": "#fd761a", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#ffb690", "on-tertiary-container": "#f0e6ff", "on-secondary": "#ffffff", "outline": "#6e7977", "surface": "#fbf8fc", "surface-container-low": "#f6f2f7", "on-background": "#1b1b1e", "primary-fixed": "#9cf2e8", "outline-variant": "#bdc9c6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "gutter": "1.25rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="inicio" href="#"><img alt="Cercano Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDKZgNyk3PECvoBWoB_C3Lz8DJsC6Hc4sTqGMs37k1KFG5_21bNAotnAeogofoAyVKt-NZymVhoqsb7R8gODCYTQqYTD9njSyXZZJTaKXywBI5A41PlJnBlH-G9AFF2e-WQZ48ibBMQo_acErCXGDgfdt6zzIH2pvNoIBCLxgiYKFwsXS516YLeROP5pcwZXIHTkRcuZo8HT5lxYowJ4E6qG3sJrfN3VvH8LUJ8MTjm"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Cercano</span></a><div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-semibold">Palermo Soho / Colegiales</span><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="inicio" href="#">Inicio</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="explorar-y-mapa" href="#">Explorar &amp; Mapa</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="promociones-y-descuentos" href="#">Promociones &amp; Descuentos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="eventos-y-agenda" href="#">Eventos &amp; Agenda</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center gap-space-xs bg-secondary-container text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full shadow-sm hover:opacity-95 transition-all" data-path="sumar-comercio" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span><span class="hidden md:inline">Sumá tu comercio gratis</span><span class="md:hidden">Sumar</span></a><button aria-label="Notificaciones de promociones" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary-container"></span></button><a class="flex items-center ml-space-xs" data-path="perfil-vecino" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT0vRCe4i3gciOH1rmlxivCqXNIma4VXx7KAF8NYrDSX8DKqOEYEgek03YKoDCvDdmC8vyOSjzP47hwlCezstbY2MBQ-SBQS1ycJokQzoHS_ArC0rhFyQEB7OK3H5PyZhLM3nfXH2gpwPWJXpQ7pPsmwIFovVd5URVzvnMDvAfXXUZ303WvtJVOjclOEYJlSeMP-9FtW96FSDZ-wsnmjapn-SmI9F8nnqNJ9sPcus"/></a></div></div></header><main class="w-full pt-20 flex-1 bg-background"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface-bright to-background pb-space-xl">
+<!-- Ambient decorative backdrop glow -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary-fixed/30 rounded-full blur-[110px] pointer-events-none"></div>
+<div class="absolute top-24 -right-24 w-80 h-80 bg-secondary-fixed/40 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="relative max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg">
+<!-- Meta Overline Banner -->
+<div class="flex items-center justify-center mb-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary font-bold">142 comercios adheridos hoy</span>
+<span class="text-outline-variant font-body-sm text-body-sm">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Colegiales, Palermo y Chacarita</span>
+</div>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="text-center max-w-3xl mx-auto space-y-space-sm mb-space-lg">
+<h1 class="font-display-lg text-display-lg tracking-tight text-on-surface font-extrabold">
+          Descubrí lo mejor de tu barrio <br class="hidden sm:inline"/>
+<span class="text-primary underline decoration-secondary-container decoration-wavy decoration-2 underline-offset-8">en un solo lugar</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+          Conectá con comercios locales, aprovechá descuentos exclusivos y enterate de las ferias, eventos y novedades que suceden cerca tuyo.
+        </p>
+</div>
+<!-- Universal Floating Search Bar -->
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl sm:rounded-full p-space-xs shadow-xl">
+<form class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-xs" onsubmit="event.preventDefault();">
+<!-- Search input -->
+<div class="flex-1 flex items-center gap-space-xs px-space-md py-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="¿Qué estás buscando? ej: café de especialidad, cerrajería..." type="text"/>
+</div>
+<!-- Divider -->
+<div class="hidden sm:block w-px h-8 bg-surface-container-high"></div>
+<!-- Zone dropdown -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+<select class="bg-transparent font-label-lg text-label-lg text-on-surface focus:outline-none cursor-pointer">
+<option value="palermo">Palermo &amp; Soho</option>
+<option value="colegiales">Colegiales</option>
+<option value="belgrano">Belgrano R y C</option>
+<option value="villacrespo">Villa Crespo</option>
+<option value="chacarita">Chacarita</option>
+</select>
+</div>
+<!-- Divider -->
+<div class="hidden sm:block w-px h-8 bg-surface-container-high"></div>
+<!-- Category dropdown -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">category</span>
+<select class="bg-transparent font-label-lg text-label-lg text-on-surface focus:outline-none cursor-pointer">
+<option value="todas">Todos los rubros</option>
+<option value="gastro">Gastronomía</option>
+<option value="indumentaria">Indumentaria</option>
+<option value="servicios">Servicios</option>
+<option value="almacen">Almacenes</option>
+</select>
+</div>
+<!-- Search button -->
+<button class="flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm sm:py-space-md rounded-xl sm:rounded-full shadow-md transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px]">search</span>
+<span>Buscar</span>
+</button>
+</form>
+</div>
+<!-- Quick Accessibility Filter Chips -->
+<div class="flex items-center justify-center gap-space-xs flex-wrap mt-space-md">
+<span class="font-label-md text-label-md text-on-surface-variant mr-space-xs hidden md:inline">Accesos rápidos:</span>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Abierto ahora</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_fire_department</span>
+<span>Con promociones hoy</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[16px]">moped</span>
+<span>Con envío a domicilio</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-tertiary text-[16px]">pets</span>
+<span>Acepta mascotas</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 2. CATEGORÍAS DE COMERCIOS -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-primary uppercase tracking-wider mb-space-xs">
+<span>Explorá por rubro</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Rubros del barrio</h2>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold transition-colors" data-path="explorar-y-mapa" href="#">
+<span>Ver los 24 rubros</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Category Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- Gastronomia -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vibrant artisanal bakery and coffee counter in a sunny neighborhood shop with fresh croissants, sourdough breads, espresso cups, teal cups and warm lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCL6i9uSg_op3OkDW7v59vPSAnFsZzwEbFSmKIxIj0A5tDsu4ZABUxJzkdj3nuJGboEUwckiPzphHpzG5UAE7eNLxfS_oBglXlkc2UHMyGtDbQ7-Trdh6EQTKL8irGlHiGlT9VxZL-9UkWKKRUMJs-EJAbLBMxWI_Y5ak1liQSwJBZDD4ptqig89n027ZRllesArBPnQFQ-GLFv8HN6c0XG2jOmbYxoff8OmmeYN2Y')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Gastronomía</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Cafés, bares, pizzerías y panaderías</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">54 locales</span>
+</div>
+</a>
+<!-- Indumentaria y Calzado -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Chic boutique showroom in Buenos Aires with rack of linen clothing, minimal accessories, modern mirrors, warm wooden floors and potted fiddle leaf fig plant" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAs72tAFiW4WOXODUaotNbkw_d1jtoWl_EzmoKNcY9xwR3zNZihih7FAp7dKnu78bXQcT8bJJDt9AElb91bz4jJLkRyczNaCTca1KLbzUs62xNpTHyoE31Np5MPoq5EQS5_47dlceYTum6rTDAb4UkMDHX5LX4h_zAF94wtYXOViSY8Je_DkQz092ChzAIgeG_GoTc6MUAL1_soSSixG7PJ_3qZosUcvw8L8x1xJB8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">checkroom</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Indumentaria</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Diseño independiente y showrooms</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">32 tiendas</span>
+</div>
+</a>
+<!-- Belleza y Estetica -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern barbershop and aesthetic salon interior with vintage leather chairs, neon accent signs, exposed brick wall, brass lighting and clean styling tools" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANuPWq7TRpZMIfGkubcK6hNmQTh4ZM0uI6n-xYWbgNdsgPNXznWpIYRauBOeuDAd0alta2xlT3BHm8WNx5ICM3_k6K3LrsaExc7O3qJFUy4vVHPAM_niUgOrDm-z175Xsg4Gxz9aWeS2TKHIaDsE4De_F-gLLJKIKYFkoPcQs6HYrFn5x7EgSabWHM5Y7mh7NNOt3HT4GqZY0mMSRRIpeZKqIkJVOjeFmnaIpJQNU')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">content_cut</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Belleza &amp; Spa</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Peluquerías, barberías y uñas</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">21 estudios</span>
+</div>
+</a>
+<!-- Almacenes y Supermercados -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Boutique organic grocer and pantry with wicker baskets filled with fresh vegetables, artisanal olive oils, wine shelves, and friendly chalkboard signs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOS85X96FS5Gh0zeZ4DgQpK2-Sag1WXojkiQ8Nafm76ND-EtRmjKSnP3zkcFRhglZznjIKNTWnPW6arqYK9CCWjL2yaOq3PQ0U3SxH-giY4afXYTANVgAcJa7i2tiaa9C6roIQVvNcslbuAtPy-aNFySc1rUjtGToCmvdJmz8MYwjdoWZsJt_qiOkVAvIWr7qmwOkUWS5jQzPpMRqwuX8_54milkNJgrDyCjQPvxA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Almacenes</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Dietéticas, orgánicos y fiambrerías</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">29 locales</span>
+</div>
+</a>
+<!-- Salud y Bienestar -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Bright yoga and holistic wellness studio with bamboo floors, natural linen cushions, warm sunlight streaming through arched windows, aromatherapy diffusers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuQcWrGwhdZqnjfNbrF_mALqRvDGZihEWcfkUCTTk9PjkZx0EIBaerkNXTxmyOn0Z4QUV6ie7WQTBMuiojI16N4wBpJaoTwO5gqUP_W2lml_xL7ED8ipeJ79vrGfRDBeBWfRorq0dWq0jVJnJgdzfsKvdzuxqPNdEvs_5XfOtsl48ZmrDGexMYjBdaNVrzvoRqqpMATR0vJKFoKr-Fe8maVxb8AkpA_MmBpX_1mXM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Salud &amp; Yoga</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Farmacias, ópticas y bienestar</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">18 espacios</span>
+</div>
+</a>
+<!-- Servicios Profesionales -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Charming neighborhood pet veterinary clinic with caring staff, gentle golden retriever, modern wooden desk and bright clean consulting room" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqPDCWTaNqr-1l9l1fXKw_gYGGlCEG0FX7FMkekXAtuLtfe0Amx6UfWExmv5R2ehS6bZgi3Lh0NijBOdG-xu2b0_jk9szH2SmyRvcr1I6JGxfKdPH3RiPe16zNENA-kG-xWNgdzfyXQtHZuInNt6BFKgfXRpvP0C70R7f2fxayBDkIvvFqVM_JhhO71X6Cp3S2QL-yH_uqGaL_EECwOhXNN38E5ZVHHB8araLXcS4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">build</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Servicios</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Veterinarias, arreglos y cerrajerías</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">26 servicios</span>
+</div>
+</a>
+<!-- Hogar y Deco -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Lush plant nursery and ceramic decor shop with ceramic pots, monsteras, cacti, handmade candle holders and warm afternoon sunbeams" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDd6Ihvczgjpd8ou9uVSES_NfsUBJaizSUXnn73UuUCTf9IFNuWMAy5H7PPrZgsjj-skxE3a0Z5C7gA1F0vu7qKsEYthQir7CdZZwTsWUV3WSEvzVwGHY2I-PqO3s2Ld60GZeXwcUFRp88za-O-vGRIT93Akytd_-XoEtm-CAcWyuE1KiUXCWdZ7JZTZVd1-mWRBbEHwYUAfjPUuQq5h1dj_Zti-CJFlv7Ae17rEZQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">yard</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Hogar &amp; Deco</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Plantas, cerámica, muebles y bazar</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">22 locales</span>
+</div>
+</a>
+<!-- Librerias y Cultura -->
+<a class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-end h-60 p-space-md" data-path="explorar-y-mapa" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cozy neighborhood bookstore and comic art shop with floor-to-ceiling bookshelves, reading armchairs, espresso mug and illustrated posters" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOLCRBm2nsfWoVejzx4ftGxVJn_KPdr62vyybYrTYXdShttAhoQM5fXhI7OK0U_pJ1VnfpT01lOX0wHayUY7Bli7xxAQlLDkGHv3GunXPB3-pOgxabOzR2rmvgXIP7CjMUsZns16LwqkK5FXMhMTarto_ur5ERk2AsJA9ac7CrBIHJIjXwvMKGOaHNoPB_h_YaG_uJHEPP6kFjxeoxEGQX-JV0uLRbrKyMw-B6yZo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-primary flex items-center justify-center mb-space-xs shadow-md">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Librerías</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Libros, arte y papelería fina</p>
+<span class="inline-block mt-space-xs font-label-sm text-label-sm bg-surface/20 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-primary">15 tiendas</span>
+</div>
+</a>
+</div>
+</section>
+<!-- 3. PROMOCIONES DESTACADAS DE LA SEMANA -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Ahorrá en tu barrio</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Promociones destacadas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Descuentos directos en WhatsApp sin comisiones ni intermediarios.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-secondary font-semibold hover:opacity-85 transition-opacity" data-path="promociones-y-descuentos" href="#">
+<span>Ver todas las promos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Promos Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Promo 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Two cold glasses of artisanal golden craft beer cheering outdoors at a sidewalk wooden table during golden hour at a vibrant neighborhood microbrewery bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBGQXDVY0C2fS-jIGFGdbPQ0idBnxrA47gMOxwP7DXrbGMwdrshZWAPA6G8icfJZ_zsmdE9EjSD4H-fQrn5H7IgIj0SaAKfry7MjdxFqAhRIKopcbudKfGega-3KPSkrsl2cgFu-XcEr4sqdl-CqNJaLFB436WSXcBR4kvHUKETu6XWJ5KZ6G_VEgWXFbDslex7Ictw_5AuO1pyxRHdgD2l1OSUD_ftnmuoB5B-xQ"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-on-primary font-headline-sm text-headline-sm font-black px-space-md py-space-xs rounded-full shadow-md">
+              2x1
+            </div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-sm py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">timer</span>
+<span>Vence el domingo</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-primary">Cervecería Austral • Colegiales</span>
+<span>A 350m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">2x1 en Cervezas Artesanales IPA &amp; Golden</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Válido todos los días de 18:00 a 20:30 hs mencionando Cercano en el local o pidiendo por WhatsApp.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Precio Especial</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">$4.200 <span class="font-body-sm text-body-sm text-outline line-through font-normal">$8.400</span></span>
+</div>
+<a class="inline-flex items-center gap-space-xs bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full hover:opacity-90 shadow-sm transition-all" href="https://wa.me/?text=Hola!%20Vi%20la%20promo%202x1%20en%20Cercano" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Promo 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Cozy specialty cafe breakfast setup with flat white coffee with latte art, flaky pain au chocolat, sourdough toast with avocado and fresh squeezed orange juice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWfFoYX-pcoL8DhqPf3m23OTDrp766YIRnJeTGxCdmPTxEaBvREURMK3M1-MXx0yU76xUxjdDovcwaGuO86mdNwFVnaSS95NGRV30Sqz4Z71Pydzzi0o0f2g9tJHPporp6FSp8VpImwWnU5vGIJG-hF064exeiU1ztlCse5m5bv8trwXBbrLFmVrfhOs6CrBr6mXm19uOw-P62ZhojimM4npvJbTvjLn7sws0PwvY"/>
+<div class="absolute top-3 left-3 bg-secondary text-on-secondary font-headline-sm text-headline-sm font-black px-space-md py-space-xs rounded-full shadow-md">
+              -30% OFF
+            </div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-sm py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">timer</span>
+<span>Hasta las 12hs</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-primary">Café Botánico • Palermo</span>
+<span>A 180m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Combo Desayuno &amp; Merienda Completo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Café de especialidad doble a elección + tostón de masa madre con palta o medialuna casera rellena.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Precio Combo</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">$3.400 <span class="font-body-sm text-body-sm text-outline line-through font-normal">$4.900</span></span>
+</div>
+<a class="inline-flex items-center gap-space-xs bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full hover:opacity-90 shadow-sm transition-all" href="https://wa.me/?text=Hola!%20Quiero%20el%20combo%20desayuno%20de%20Cercano" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Promo 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Modern street style garments and colorful linen shirts organized on minimalist wooden hangers inside an upscale Palermo boutique studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBvKyg8K2m9sEj7A6UIHOtCFNe3zoU1i9GXC1oYC-gDcSjFN5pbwnWMhdPJCQieDEE7juhLvl6P0fcYOWUvrwvtdJhmkyppDk0SqgpIhiyifdys3rk9ea__L6lnT-C1YLukZHmKebRRHB9qlZ6VSvSRk4nAu0WJx1NrQ8M9zoN4fWQGMweykGKGd7CHPrdYKFO3NUJkog4a0nwzgQQmG1S7XXs_j7VWm88gcuDXyk"/>
+<div class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-black px-space-md py-space-xs rounded-full shadow-md">
+              25% OFF
+            </div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-sm py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">star</span>
+<span>Vecinos Cercano</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-primary">Urban Vibe • Palermo Soho</span>
+<span>A 520m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">25% OFF en tu primera compra en el local</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Aplica para indumentaria de nueva temporada pagando en efectivo o transferencia inmediata.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Cupón exclusivo</span>
+<span class="font-label-lg text-label-lg text-tertiary font-extrabold tracking-wide">VECINO-CERCANO</span>
+</div>
+<a class="inline-flex items-center gap-space-xs bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-space-xs rounded-full hover:opacity-90 shadow-sm transition-all" href="https://wa.me/?text=Hola%20Urban%20Vibe!%20Tengo%20el%20cupon%20VECINO-CERCANO" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Canjear</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. COMERCIOS DESTACADOS Y RECOMENDADOS -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Calificados por los vecinos</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Comercios recomendados</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Negocios con atención cálida, trayectoria y las mejores reseñas del barrio.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold transition-colors" data-path="explorar-y-mapa" href="#">
+<span>Explorar mapa completo</span>
+<span class="material-symbols-outlined text-[18px]">map</span>
+</a>
+</div>
+<!-- Merchant Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Merchant 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-xl overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cozy interior of Cafe Botanico specialty coffee shop with rich wood counters, barista pouring latte art, green plants hanging and friendly customers chatting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsHxgmM_p2pPHG0CPEafT0Ar8Na_7UtjdwbmYlxn29VZRCK6XBIIDZcMShyyp6NWMNbtSmHCSUs7i3eQSSSPRRgUKVWSgfmYN_6rPLcr0_vRlcP9LZhcfvOprt8CCyq_2mFPnODAeT-HqqgAGSb5_fs8GHf_Krk5zMJP8cUsALrDURdqaWgpy6PNQjDEGY0jmEgLJxIPV5oX-f-Mgd_wCIywq38Wcq255CF5RgpMg"/>
+<div class="absolute top-2 left-2 bg-surface/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Abierto ahora</span>
+</div>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="px-space-xs space-y-1">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase">
+<span>Cafetería de Especialidad</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Café Botánico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span class="truncate">Gorriti 4820, Palermo Soho</span>
+</p>
+<p class="font-body-sm text-body-sm text-outline">Lun a Dom 08:30 - 20:00 hs</p>
+</div>
+</div>
+<div class="pt-space-md px-space-xs flex items-center gap-space-xs mt-space-sm">
+<a class="flex-1 text-center py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" data-path="explorar-y-mapa" href="#">
+            Ver Ficha
+          </a>
+<a aria-label="WhatsApp Café Botánico" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm" href="https://wa.me/" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+<!-- Merchant 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-xl overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Rustic artisan sourdough bakery showcase with golden crusty baguettes, sourdough loaves on raw wooden shelves, warm incandescent lights and clean slate tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFyAvKsX0u2cMe4-Sk7Hx05HQdipO3VY_Wtgc60jpHThQOYp0-_t84L97b6aGbJCuZKfcDnLrjk3KVONDfo7cgNksFoRXbtnaztOqMVkn2FZysDW94ApXsZNIxpZZRTYCZEe-ssRRrJOZOIWEsn9fatIVEnPSvTEGdL_2aiOCX-6MZhRfR7f62v1Sdcw2yB2E8cCnLDlAfFqoGAsTB1S_K6oVaJh2CQFLgN_sDXYU"/>
+<div class="absolute top-2 left-2 bg-surface/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Abierto ahora</span>
+</div>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="px-space-xs space-y-1">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase">
+<span>Panadería &amp; Pastelería</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">La Madrileña</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span class="truncate">Conde 1430, Colegiales</span>
+</p>
+<p class="font-body-sm text-body-sm text-outline">Mar a Sáb 07:30 - 19:30 hs</p>
+</div>
+</div>
+<div class="pt-space-md px-space-xs flex items-center gap-space-xs mt-space-sm">
+<a class="flex-1 text-center py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" data-path="explorar-y-mapa" href="#">
+            Ver Ficha
+          </a>
+<a aria-label="WhatsApp La Madrileña" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm" href="https://wa.me/" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+<!-- Merchant 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-xl overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Interior of contemporary independent fashion shop with chic urban garments, tasteful lighting, wooden displays and minimalist accessories display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDarFglJ4KFGKr45Ksaumu5lP5PjWNqGX9nM42QDiZ3uWQMe-tqBWVypcjAsAxNWa0gSwL8TGysgqSVqw6V3HAU5_ROUH01z3NbRkIJ_o-7udGmaT8zXR4joVRiDzAc6rVlwByk_NklIJh4ZaGnwrkYD1ETbCesV9FwxkvVYihPr8r0dFr_S6a1ILGi37kQ37jjx-VOTi9smIXGpHYXdOyKSsVDTLrrT_vvGsBeg78"/>
+<div class="absolute top-2 left-2 bg-surface/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Abierto ahora</span>
+</div>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8</span>
+</div>
+</div>
+<div class="px-space-xs space-y-1">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase">
+<span>Indumentaria de Diseño</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Urban Vibe</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span class="truncate">El Salvador 4710, Palermo</span>
+</p>
+<p class="font-body-sm text-body-sm text-outline">Lun a Sáb 11:00 - 20:00 hs</p>
+</div>
+</div>
+<div class="pt-space-md px-space-xs flex items-center gap-space-xs mt-space-sm">
+<a class="flex-1 text-center py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" data-path="explorar-y-mapa" href="#">
+            Ver Ficha
+          </a>
+<a aria-label="WhatsApp Urban Vibe" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm" href="https://wa.me/" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+<!-- Merchant 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 rounded-xl overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Sunny neighborhood botanical store filled with lush houseplants, terracotta pots, hanging macrame, colorful dried florals and cheerful florist wrapping a bouquet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYW6lL2dz6krtTLunnbIYULA0EG5uVI_V7E-sbvOZpbUEiCBTdNQV1tsyItlXHSoa7sxQX7K4QkyNtCaZlc77r8ckMbTyjJQOupgCFveleFfg8taLrTlgnF3Ko_-Hzs5pP3xgu8wJf8dPsUKOegfbxPctQD-HKVjLnU361KYUXd-mdpvqh2PLiAcSIHsrNeJ_H1o1TzaMsp0xv2E3ES3bR6xH-0X5gZkG7cholS7U"/>
+<div class="absolute top-2 left-2 bg-surface/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Abierto ahora</span>
+</div>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-bold px-space-xs py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5.0</span>
+</div>
+</div>
+<div class="px-space-xs space-y-1">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm uppercase">
+<span>Plantas &amp; Botánica</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Boutique Floral</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span class="truncate">Cabrera 5120, Palermo</span>
+</p>
+<p class="font-body-sm text-body-sm text-outline">Mar a Dom 10:00 - 19:30 hs</p>
+</div>
+</div>
+<div class="pt-space-md px-space-xs flex items-center gap-space-xs mt-space-sm">
+<a class="flex-1 text-center py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" data-path="explorar-y-mapa" href="#">
+            Ver Ficha
+          </a>
+<a aria-label="WhatsApp Boutique Floral" class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm" href="https://wa.me/" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. ÚLTIMOS COMERCIOS INCORPORADOS (WELCOME SECTION) -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg">
+<div class="bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low rounded-3xl p-space-lg md:p-space-xl">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">celebration</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">¡Recién llegados al barrio!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Dales una cálida bienvenida a los nuevos comerciantes de esta semana.</p>
+</div>
+</div>
+<span class="font-label-md text-label-md bg-surface-container-lowest text-primary px-space-md py-space-xs rounded-full shadow-sm font-semibold">
+          +6 esta semana
+        </span>
+</div>
+<!-- Mini Welcome Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Artisanal ice cream parlor gelato scoops served in waffle cones with fresh berries and chocolate toppings in Buenos Aires shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjr5xI6RgnKw1dTiksja-ftURemgNjExoHyYMuuNCnqB1JGqM5xODGmPJkHnUwvS1x5Yz4gOLjE-HXEvyffCWKAjnbUrDDPkt1MbjTehgAxuaqSQnZpbRsqU4AJ7fbloxP_sgzl5oDVm4APGgVvIWFbrYQC69Kr3tWggaAWqDkuZZH4dE_OGoP23rCYxfR3JOzxAJFfL41Dl7nbLSUnCoajaYFdIPWXDJeWNX4zc8"/>
+<div class="min-w-0 flex-1">
+<span class="inline-block px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold mb-1">
+              Nuevo en Palermo
+            </span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Gelateria Deliziosa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Helados 100% artesanales y veganos</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary flex items-center justify-center text-on-surface transition-colors" data-path="explorar-y-mapa" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Modern bicycle repair workshop with tools neatly organized on wall and sleek gravel bikes being tuned by mechanic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBebHWOGcCwKrFbAV6YprA6n9fURz6WX2wfyDEb_IL7aYy_nEnBflFWx7vGq_Bslz5AJ54n3S-fxXM6skh14pvmcSyWpc0bwR61_9dTQeZDAW2wtLQ8w4GQI0MLgTw7fFD6wHjqTCncrQ4qHva0M0DRwICZbvGA2dOxisGaLRnLkkMLDy-BxU_VCylcTu7uPPwER2uNzXs_VWd4hKH9B8m4yBNTYJA01UgMXD_bGA4"/>
+<div class="min-w-0 flex-1">
+<span class="inline-block px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold mb-1">
+              Nuevo en Colegiales
+            </span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Taller Ciclo Vivo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Service express y accesorios urbanos</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary flex items-center justify-center text-on-surface transition-colors" data-path="explorar-y-mapa" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Handcrafted pottery ceramics workshop studio with bowls, mugs with colorful glazes and pottery wheel table in sunny loft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIVMgFcskeLgYQ_ddogzbbMe51I9ETDW_uz4jKDav7VGiOgFi4ZPinSxFsB9B3Dz_BdxEHakPYRdKiWAHIv5waf59uQJBsXOAlMwsMCCXcfWqGDSXYLrq0YrMfLsnN6OFajPXE44NvVTJwnN9JnAQiEJbxtDL_dFt3vi3UdHX2T1quKLa-C3kIAnLOOjoYnVM3rVyOvtSc6uo9Tc5kmHZXWfVqCA8_7Usd3RFbTSc"/>
+<div class="min-w-0 flex-1">
+<span class="inline-block px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold mb-1">
+              Nuevo en Chacarita
+            </span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Barro &amp; Fuego Cerámica</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Taller abierto y piezas únicas</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary flex items-center justify-center text-on-surface transition-colors" data-path="explorar-y-mapa" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PRÓXIMOS EVENTOS Y FERIAS BARRIALES -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Agenda comunitaria</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Ferias &amp; Eventos del barrio</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Actividades para encontrarnos, escuchar música y apoyar a los emprendedores locales.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-tertiary hover:opacity-85 font-semibold transition-opacity" data-path="eventos-y-agenda" href="#">
+<span>Ver toda la agenda</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Event Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Event 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Outdoor open air weekend market in a leafy green plaza with canvas tents, stalls with handmade artisanal goods and people enjoying sunny morning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbCMBnJ1dLUO7jFQvOnp2UlLCVVSiDeIPO5XJ-Fa8mpUQ6_dzioMKgjw407-T-tLure7JdRslMHMIJQg-SIgsJbztWpIAI7CjTAC3bKjSe1_KhDuqEcV2ZeTZIwJU-4XqmCNsNk4vZ2zNgqwIzxfObUwBF9jLSjZnMLdq-d5kVU5LCGo2IBwIBrRlRg_ESq_YrcdpwYEWh5IhzheKsiy9r1SYGsxjGd7lzgwbGf2o"/>
+<div class="absolute top-3 left-3 bg-tertiary text-on-tertiary rounded-xl px-space-sm py-1 text-center shadow-md leading-tight">
+<span class="font-label-sm text-label-sm uppercase block">SÁB</span>
+<span class="font-headline-sm text-headline-sm font-black">18</span>
+</div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold px-space-sm py-1 rounded-full">
+            Entrada Libre
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Feria de Diseño &amp; Emprendedores</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Más de 40 puestos con cerámica, plantas, indumentaria vintage y propuestas gastronómicas.</p>
+<div class="pt-space-xs space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">schedule</span>
+<span>11:00 a 19:00 hs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>Plaza Armenia, Palermo Soho</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="block w-full text-center py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-tertiary hover:text-on-tertiary font-label-md text-label-md transition-colors" data-path="eventos-y-agenda" href="#">
+              Más información &amp; Cómo llegar
+            </a>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Intimate acoustic live concert in cozy neighborhood bar courtyard with warm fairy string lights, wooden tables and musician playing acoustic guitar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxO3esHMCNCs5lCQup8VBvU7pj1TrheqOKDUckCqSw3Fr74X-g_nD50t23eSOQe-TfdypeKUIRa18SPD1KPWRmFnEc8CQ9ddYLNi17EDeueG-dNFyPajsRAtdoD0kiu4TLm6o8hmaQr8302bKBWnp8mEgX0fPuTy3-Y1n798KkFDMxVqHuc2GIMwSuHmKxvg-mT3rVAsga70IcBMZHH1uj-bSpAp4hD49EpuwTfJU"/>
+<div class="absolute top-3 left-3 bg-secondary text-on-secondary rounded-xl px-space-sm py-1 text-center shadow-md leading-tight">
+<span class="font-label-sm text-label-sm uppercase block">VIE</span>
+<span class="font-headline-sm text-headline-sm font-black">24</span>
+</div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold px-space-sm py-1 rounded-full">
+            20:30 hs
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Acústico &amp; Vinos en Bar El Roble</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Noche de canciones al patio con artistas del barrio y copa de cortesía para vecinos de Cercano.</p>
+<div class="pt-space-xs space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>20:30 a 23:30 hs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+<span>Freire 1120, Colegiales</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="block w-full text-center py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-md text-label-md transition-colors" data-path="eventos-y-agenda" href="#">
+              Reservar lugar sin cargo
+            </a>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Collective independent fashion pop-up showroom in daylight warehouse space with clothing rails, designer mirrors and tote bags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA217ULeGpfIDxCD_89KV47MquF2j5xCOw-cPXO7AN8M5is8OJqcrW6livBbR6FvU_-ACxT66FI14JrMr3KfQvc0hVVdBgPv66k2FwdipYiU00-4R9I4xlvvBFEkKAJrygfIGqm2PPxpJKMgzjh9GinxYGri8yWPL1j6QTsk_oBHr-0O2luPSAh5u6GDoG9IH9jBKm8g7RB66yirWP_By14dO8tss31qXna2gMg3P0"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary rounded-xl px-space-sm py-1 text-center shadow-md leading-tight">
+<span class="font-label-sm text-label-sm uppercase block">DOM</span>
+<span class="font-headline-sm text-headline-sm font-black">26</span>
+</div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm font-semibold px-space-sm py-1 rounded-full">
+            14:00 hs
+          </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pop-Up Showroom Colectivo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ocho marcas emergentes de indumentaria y joyas artesanales se unen en una tarde con café y música.</p>
+<div class="pt-space-xs space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>14:00 a 20:00 hs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span>Loyola 610, Villa Crespo</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="block w-full text-center py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors" data-path="eventos-y-agenda" href="#">
+              Más información &amp; Cómo llegar
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. BANNER DE CAPTACIÓN PARA COMERCIANTES LOCALES -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<div class="relative overflow-hidden rounded-3xl bg-primary text-on-primary p-space-lg md:p-space-xl shadow-xl">
+<!-- Background pattern -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -top-24 w-64 h-64 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface/20 backdrop-blur-md font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-primary">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>Comunidad de comerciantes</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-primary max-w-xl">
+            ¿Tenés un comercio o emprendimiento en el barrio?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">
+            Sumate a <strong>Cercano</strong> de forma 100% gratuita. Publicá tus productos, destacá tus promociones semanales y conectá directamente con cientos de vecinos cada día sin pagar comisiones por venta.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified</span>
+<span class="font-label-md text-label-md">100% Gratuito</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">contact_support</span>
+<span class="font-label-md text-label-md">Atención por WhatsApp</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">visibility</span>
+<span class="font-label-md text-label-md">Visibilidad barrial</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+<a class="inline-flex items-center gap-space-sm bg-secondary-container hover:bg-secondary text-on-primary font-headline-sm text-headline-sm font-bold px-space-xl py-space-md rounded-full shadow-lg hover:scale-105 transition-all text-center" data-path="sumar-comercio" href="#">
+<span class="material-symbols-outlined text-[24px]">add_business</span>
+<span>Registrar mi comercio</span>
+</a>
+<span class="font-body-sm text-body-sm text-on-primary-container mt-space-xs">Registro rápido en menos de 3 minutos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. COMUNIDAD E INSTAGRAM FEED -->
+<section class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg mb-space-xl">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm mb-space-md">
+<div>
+<div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>Historias de la calle</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">La vida en nuestro barrio</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Vecinos, cafeterías, perritos y rincones con encanto en @cercano.barrio</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" href="https://instagram.com/cercano.barrio" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Seguir en Instagram</span>
+</a>
+</div>
+</div>
+<!-- Instagram Mosaic -->
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-space-sm">
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Barista smiling warmly while handing an iced espresso beverage to a customer in a sunlit corner coffee shop in Buenos Aires" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKUYUfykZ5ZIcrZ7q7OUdXkBC-nZ8xn7scmdf6mRh4uJWQAjeOwCuY7KxeU-weu18ZW0mY8JxuUM4txkRoNoJTOgdgSHqlWZ9CCHqcLj1wzid2W9WqGx3NJQGrXiYIpdFWNYBWdrctiF9sA8rO5Z0qZ024FTJj2wd8LZVlR0ul2Cq5IxxoKPEM7MCu4oi7gzb6gz6BrTcV9SRktM1y1AqAAUJD_9k-2fz5HH3Jo8Q"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Artisanal sourdough pizza straight from wood fired stone oven with melted burrata, basil leaves and extra virgin olive oil drizzle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBByQCKQXvAP5DPKBf6vfVWausZY4TJ4B1DBChEwopMlMo2v772PLgZ9CfuSOq2bQIBJALsMKu-9Hh53LvdFi7r7mGY4-WUqh8t72roaReIyIGXFojP2C_4pw9n6CkvGcs3bAlB5s7ipz3rbsh3yX9j-l1IpL7eUy8B2XQpO7r4_32Ohlk0iqhp8y4MR14crZg548gcLasEleRmABo4glu3Oyo52pkAUYqU2EccOxU"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Happy dog sitting outside a neighborhood specialty coffee shop on leafy Buenos Aires cobblestone sidewalk with its owner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsRKndeyicmRJx1bjU46AjysZnnVVP_vB50QIEWzTzy_vVK8JYaHngO6OpPU1zf4eR1Wits9aerQYApPPQGj6NJSvUgPQEEDWsRBa1varz4681ASMz7iuxhxWTOuQWr1eNyJXrtu6QpSFFCJU7uLGEBgYIhxmMh4hVA338vcbCiCLp6c_bnexxJ_FIty0HFVsr71BJ_TLTSp9JYEPXWeCGrsShyz48zVYQW2ZL-jY"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Ceramicist shaping a clay vase on revolving pottery wheel in neighborhood workshop filled with terracotta vases and gentle morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdAc4miBJ15T2EVbq7z1TQV9qwAQIGyR0YYzYUsJWlr30bl7thFinPhJ9RQUu0X-TqaUmLwZaeL54r5i2FdL96_3t3yyjIbPIaI9e1NE-lWIA_jnRImQYsuBKS_snkkK8xAf6uXipOKtZsX7A4_nJuHViAG_DDQtvlCLlyjRs85OthtzsweRdANY2mFq4bes1DhgiEaE82ffRDpg6tCFv4zQZfV4EOaUoQjzArE4I"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Colorful array of fresh organic heirloom tomatoes, lemons and herbs at an independent neighborhood market stall in Palermo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCGqvKG0ouyX3Ek6ghusa6kXBJJJQbanbs0BdfG_qpntugSK2Oaj8x7bYUFqF_XNskgb-ubHVY4Pq4omR9hjMpYCHsHEvDE_RonnVM2qpf_kx5dYFdZFHSL40Cs88CSwIHkgUIEUN6TwtnsXy2E4c20g1PzKOAmnAjJAoRCVB9RxBcoUYtQf45D916CyT2fc6LghDJO4K7lQR41qZLUaSh-nUhbysr6bkQL5LXLF4"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden h-44 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Golden hour view of a cozy tree-lined residential street corner in Buenos Aires with classic Parisian balconies and welcoming cafes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu14nRjc-lsQ6bRiQ4XVhcYmnkyz84kIFeb6wXf8lxbuda9iSpIOYxS99-TfytxEBsjm3E1ubmNQrTAc2IxpRo-nfWMN2tcIp9bpolJLdG3diWyfvXnijuCaaGSdjcn3rdRSuka0vg-RnarWVi0Ztz7Vp8j7QYZ5WU3EMetufns9M9xJSdx5JUtkaQvgeo3Rav05m3Ma0goGykWWOGbA0tD7clnXCz5xHVG3dxmd0"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-4 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Cercano Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDKZgNyk3PECvoBWoB_C3Lz8DJsC6Hc4sTqGMs37k1KFG5_21bNAotnAeogofoAyVKt-NZymVhoqsb7R8gODCYTQqYTD9njSyXZZJTaKXywBI5A41PlJnBlH-G9AFF2e-WQZ48ibBMQo_acErCXGDgfdt6zzIH2pvNoIBCLxgiYKFwsXS516YLeROP5pcwZXIHTkRcuZo8HT5lxYowJ4E6qG3sJrfN3VvH8LUJ8MTjm"/><span class="font-headline-sm text-headline-sm text-primary">Cercano</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Redescubrí la calidez de tu barrio conectando con comerciantes locales, creadores independientes y vecinos. Apoyá lo genuino y fortalecé tu comunidad.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-md text-label-md" href="https://instagram.com/cercano.barrio" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span>@cercano.barrio</span></a><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary hover:opacity-95 transition-all font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px]">share</span><span>Compartir en WhatsApp</span></button></div></div><div class="lg:col-span-3 space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Categorías Populares</h3><ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="explorar-y-mapa" href="#">Gastronomía &amp; Cafés</a></li><li><a class="hover:text-primary transition-colors" data-path="explorar-y-mapa" href="#">Indumentaria &amp; Calzado</a></li><li><a class="hover:text-primary transition-colors" data-path="explorar-y-mapa" href="#">Belleza &amp; Bienestar</a></li><li><a class="hover:text-primary transition-colors" data-path="explorar-y-mapa" href="#">Almacenes &amp; Orgánicos</a></li><li><a class="hover:text-primary transition-colors" data-path="explorar-y-mapa" href="#">Servicios del Barrio</a></li></ul></div><div class="lg:col-span-3 space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Comerciantes &amp; Ayuda</h3><ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors font-medium text-secondary" data-path="sumar-comercio" href="#">Sumá tu comercio gratis</a></li><li><a class="hover:text-primary transition-colors" data-path="guia-comerciantes" href="#">Guía para comerciantes</a></li><li><a class="hover:text-primary transition-colors" data-path="preguntas-frecuentes" href="#">Preguntas frecuentes</a></li><li><a class="hover:text-primary transition-colors" data-path="terminos-y-privacidad" href="#">Términos y Privacidad</a></li></ul></div><div class="lg:col-span-2 space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Comunidad</h3><p class="font-body-sm text-body-sm text-on-surface-variant">¿Tenés una iniciativa comunitaria o feria barrial? Publicala sin costo para toda la red de vecinos.</p><div class="pt-space-xs"><a class="inline-block px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="eventos-y-agenda" href="#">Ver Agenda Barrial</a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Cercano. Hecho con cariño para impulsar el comercio local.</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">favorite</span><span>De vecinos para vecinos</span></p></div></div></footer></body></html>
